@@ -5,9 +5,12 @@ from PIL import Image
 
 model = tf.keras.models.load_model('model.h5')
 st.title('Tomato Plant Disease Detection')
-st.subheader('First, upload a leaf plant photo and then click on Detect Disease.')
-st.write('There are five kinds of diseases: **Bacterial spot, Target Spot, Leaf Mold, Early blight, Late blight**;')
-st.write('and, **healthy** plant.')
+st.image('cover.png')
+st.subheader('First, upload a leaf plant photo and then click on Detect Disease')
+
+st.write('#### There are five kinds of diseases: **Bacterial spot, Target Spot, Leaf Mold, Early blight, Late blight**;')
+st.write('#### and, **healthy** plant.')
+st.write('You can download sample images here **[sample images](https://drive.google.com/drive/folders/1u0qWHGdjzmI3s2SO28UICI1gsgGAzkVK) and upload below**')
 classes = ['Tomato_Bacterial_spot',
             'Tomato_Early_blight',
             'Tomato_Late_blight',
